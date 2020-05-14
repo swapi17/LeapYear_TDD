@@ -10,6 +10,8 @@ public class LeapYear {
 		   return false;
 		else if (isMultipleOf4(year))
 		   return true;
+		else
+		   return false;
 		
 	}
 
@@ -24,6 +26,7 @@ public class LeapYear {
 	private boolean isMultipleOf4(int i) {
 		return isMultipleOf(i, 4);
 	}
+	
 	
 	private boolean isMultipleOf(int num, int base) {
 		return ((num % base) == 0);
