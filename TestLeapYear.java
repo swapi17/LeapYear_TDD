@@ -23,6 +23,12 @@ public class TestLeapYear {
 		assertTrue(isLeap);	
 	}
         
+	@Test
+	public void when1700_thenIsNotLip() {
+		boolean isLeap = this.isLeap(1700);
+		assertFalse(isLeap);	
+	}
+	
 	private boolean isLeap(int year) {
 		return leapYear.isLeap(year);
 	}
