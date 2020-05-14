@@ -8,6 +8,8 @@ public class LeapYear {
 		   return true;
 		else if (isMultipleOf100(year))
 		   return false;
+		else if (isMultipleOf4(year))
+		   return true;
 		
 	}
 
@@ -17,6 +19,10 @@ public class LeapYear {
 	
 	private boolean isMultipleOf100(int i) {
 		return isMultipleOf(i, 100);
+	}
+	
+	private boolean isMultipleOf4(int i) {
+		return isMultipleOf(i, 4);
 	}
 	
 	private boolean isMultipleOf(int num, int base) {
